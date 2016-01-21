@@ -16,6 +16,7 @@ cursor: url(chalk.png),auto;
 }
 
 .logo-wrap {
+	min-height: 600px;
 	height: 100%;
 
 	
@@ -88,9 +89,9 @@ cursor: url(chalk.png),auto;
 	width: 19%;
 	opacity: 0.85;
 	height: 20%;
-	top:62%;	
+	top:65%;	
 	right: 15%;
-	min-width: 250px;
+	min-width: 200px;
 	
 }
 #flowerA, #flowerB{
@@ -144,7 +145,7 @@ top: 60%;
 	top:30%;
 	text-transform: uppercase;
 }
-@media (max-width: 500px ) {
+@media (max-width: 600px ) {
 #wel-title{
 	font-size: 25px;
 }

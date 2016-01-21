@@ -50,8 +50,8 @@ body.mainpage{
   width: 100%;
     margin: 0;
     border: none;
-    
 
+    
   }
 #resume-pannel{
   overflow-y:hidden;
@@ -121,10 +121,14 @@ body.mainpage{
 svg text.time, .info{
   text-transform: uppercase;
   stroke:white;
+  opacity: 0;
   font-family: 'Architects Daughter', cursive;
 }
 svg text.time{font-size: 30px;  fill:#585858 ;  stroke-width:1;}
 svg text.info{font-size: 15px;  stroke-width:0.5;}
+svg image{
+  opacity: 0;
+}
 svg {
 
   width:100%;
@@ -149,7 +153,7 @@ svg {
 <body class="mainpage">
 
 <div id="resume-pannel">
-   <object type="text/html" data="resume.html">
+   <object type="text/html" data="../kelsey/resume.html">
     </object>
 
 </div><!-- end resume -->
@@ -599,20 +603,20 @@ svg {
   
         <div class="right-pannel" style="height:300px;background:none;box-shadow:none">
          <section class="demo-2">
-          <div class="uc-container">
+          <div class="uc-container" id="test">
             <div class="uc-initial-content">
               <img src="images/cschedule.png"  />
-              <span class="icon-eye">
+              <span class="icon-eye" id="unmute">
                 <div class="mask mask-1"></div> 
                 <div class="mask mask-2"></div>
                 <div class="content"><br>responsive website designed for cschedule<br>click me to see the demo version</div>
               </span>
             </div>
-            <div class="uc-final-content">
-                 <object type="text/html" data="http://xiaoyizhou.info/dev/public/" id="myweb">
+            <div class="uc-final-content" >
+                 <object type="text/html" data="http://xiaoyizhou.info/cschedule/home.html" id="myweb">
                   </object>
-              <div class="title"><h4>cschedule demo page</h4> by Kelsey Zhou <a href="http://xiaoyizhou.info/dev/public/" class="icon-link"></a></div>
-              <span class="icon-cancel"></span>
+              <div class="title"><h4>cschedule demo page</h4> by Kelsey Zhou <a href="http://xiaoyizhou.info/cschedule/home.html" class="icon-link"></a></div>
+              <span class="icon-cancel" onclick="mute()"></span>
             </div>
           </div><!-- / uc-container -->               
       </section>
@@ -894,11 +898,13 @@ $(window).load(function() {
        baloon.animate({top:'-=8'}, 1000, runIt);
    }
    setTimeout(function(){runIt();}, 3100);
+
     //$("#resume").animate({fontSize: '30px'}, 900);
 
   $(window).scroll(function(){
+         $("#edu-title, #edu-subtitle").css("opacity", 1-($(window).scrollTop()-260)/100);
         $("#dragon, #catsleep, #flowerB").css("opacity", 1-($(window).scrollTop()-200)/100);
-     $("#edu-title, #edu-subtitle").css("opacity", 1-($(window).scrollTop()-250)/100);
+
     $("[id=nc]").css("opacity", ($(window).scrollTop()-350)/100);
     $("[id=nt]").css("opacity", ($(window).scrollTop()-410)/100);
     $("#book").css("opacity", ($(window).scrollTop()-510)/100);
@@ -921,6 +927,7 @@ $(window).load(function() {
   });
 
 
+
     $("#resume").click(function(){
 
       $("body.mainpage").css('overflowY', 'hidden');
@@ -933,13 +940,14 @@ $(window).load(function() {
 
 
     $("#learn-more").click(function() {
+      // $("body.mainpage").css('overflowY', 'scroll');
      // alert("works");
     $('html, body').animate({
-        scrollTop: $("#resume").offset().top
+        scrollTop: $("#wel-title").offset().top
     }, 1000);
     //$("#resume-pannel").hide();
 
-    $("body.mainpage").css('overflowY', 'scroll');
+    //$("body.mainpage").css('overflowY', 'scroll');
     //if(document.getElementById("welcome").innerHTML !="welcome to my home page")setTimeout(function(){changeText($("#TypeEffect p"), $("#welcome"), 150)},800);
   });
 

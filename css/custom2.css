@@ -25,11 +25,11 @@
     content: '\2715'; 
     color:white;
     } /* '✕' */
-.icon-plus-circle:before { content: '\50'; } /* 'P' */
+.icon-plus-circle:before { content: '\50'; } 
 .icon-forward:before { content: '\47'; } /* 'G' */
 
 .icon-search:before { content: '\5a'; } /* 'Z' */
-.icon-link:before { content: '\4c'; } /* 'L' */
+.icon-link:before { content: '\002B'; } 
 
 
 .demo-2 .uc-container {
@@ -115,6 +115,10 @@
     font-size: 18px;
     border-radius: 50%;
     text-indent: 2px;
+    text-decoration: none;
+}
+.demo-2 .icon-link:hover{
+    text-decoration: none;
 }
 
 .demo-2 .icon-cancel {

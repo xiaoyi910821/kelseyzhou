@@ -1,0 +1,88 @@
+#gallery{
+	width: 100%;
+	height: auto;
+	background-color: #e8e8e8;
+	background-image: url(../images/paper.png);
+	
+	text-align: center;
+	font-family: 'Architects Daughter', cursive;
+	font-size: 15px;
+	padding-top: 1%;
+	box-shadow: 0px 0px 4px 0px silver;
+
+	}
+.show-photo{
+	padding-left: 6px;
+}
+.time-title{
+	text-align: center;
+	width: 30%;
+	font-size: 30px;
+	margin-left: 35%;
+	margin-top: 5%;
+}
+#gallery-title{
+	word-spacing: 4px;
+	text-align: center;
+	color: black;
+	font-variant: small-caps;
+	padding: 3% 0;
+	line-height: 40px;
+	font-size: 24px;
+	z-index: 1000;
+}
+#gallery-title em{
+	font-variant: normal;
+	padding: 2%;
+	font-size: 20px;
+}
+#gallery-title a{
+	text-decoration: none;
+	color: black;
+}
+#gallery-title a:hover, #gallery-title a:visited{
+	color: gray;
+}
+
+#bridge{
+
+	position: absolute;
+	left: 0;
+		width: 30%;
+}
+#footer{
+	width: 100%;
+	   background: #181818;
+    box-shadow: 0px 0px 5px 1px black;
+  min-height: 100px;
+  height: auto;
+
+    background-image: url(../images/Dskyline.svg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+}
+.social-icon{
+	  font-size: 15px;
+  text-transform: uppercase;
+  line-height: 40px;
+  letter-spacing: 1.5px;
+  text-align: center;
+  color: white;
+  padding: 1% 0 4% 0;
+   font-family: 'Architects Daughter', cursive; 
+
+}
+.social-icon img{
+   padding: 1% 2%;
+   width: 6%;
+   min-width: 30px;
+ }
+  #footer a{
+  	text-decoration: none;
+  	color:white;
+  }
+.effect-parent{
+	display: none;
+}

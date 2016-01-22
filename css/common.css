@@ -30,6 +30,8 @@ cursor: url(chalk.png),auto;
 	position:absolute;
 	width: 4%;
 	height: 4%;
+	min-width: 50px;
+
 	
 }
 #top1{
@@ -83,26 +85,24 @@ cursor: url(chalk.png),auto;
 	top:90%;
 	width: 4%;
 	height: 4%;
+	min-width: 50px;
 }
 #dragon{
 	position: absolute;
-	width: 19%;
+	width: 17%;
 	opacity: 0.85;
-	height: 20%;
-	top:65%;	
+	bottom: 0;
 	right: 15%;
-	min-width: 200px;
-	
+	min-width: 140px;
+
 }
 #flowerA, #flowerB{
 	opacity: 0;
 }
 #sleep{
 	bottom: 0;
-	width: 50%;
-	height: 40%;
-	top:60%;
-	position: absolute;
+		width: 50%;
+		position: absolute;
 
 }
 #welcome,#resume, #learn-more, #wel-title{

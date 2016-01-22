@@ -28,7 +28,7 @@ var svgData = {
         }],
         "dimensions": {
             "width": 100,
-            "height": 250
+            "height": 100
         }
     },
                 "sleep": {
@@ -39,7 +39,7 @@ var svgData = {
         }],
         "dimensions": {
             "width": 300,
-            "height": 250
+            "height": 115
         }
     },
                     "welcome": {

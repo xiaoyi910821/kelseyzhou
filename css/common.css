@@ -125,6 +125,7 @@ width: 50%;
 #welcome a:hover, #resume a:hover, #learn-more a:hover{
 	text-decoration: none;
 	font-style: italic;	
+	cursor: pointer;
 }
 #welcome{
 top: 60%;
@@ -136,6 +137,7 @@ top: 60%;
 #learn-more, #learn-more a{
 	color: white;
 	top:55%;
+	cursor: pointer;
 }
 #wel-title{
 	min-width: 100%;

@@ -26,10 +26,10 @@ cursor: url(chalk.png),auto;
 
 #bottom1,#bottom2,
 #top1, #top2,#top3,
-#middle1, #middle2,#rose1{
+#middle1, #middle2, #rose1{
 	position:absolute;
-	width: 2.5%;
-	height: 2.5%;
+	width: 4%;
+	height: 4%;
 	
 }
 #top1{

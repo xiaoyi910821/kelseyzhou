@@ -173,6 +173,7 @@ svg {
             <div id='bottom2'  ></div>
           <div id='top1' ></div>
           <div id='top2' ></div>
+          <div id='rose1' ></div>
            <div id='top3' ></div>
 
             <div id='middle1' ></div>
@@ -221,10 +222,10 @@ svg {
 
                $("#bottom1, #bottom2").lazylinepainter({
                     'svgData': svgData,
-                    'strokeWidth': 3,
+                    'strokeWidth': 7,
                     'strokeColor': "white",
                   'ease': 'easeInOutQuad',
-                  'delay':2500
+                  'delay':1000
                 });
                $("#bottom1, #bottom2").lazylinepainter('paint');
 
@@ -233,7 +234,7 @@ svg {
                     'strokeWidth': 1,
                     'strokeColor': "white",
                   'ease': 'easeInOutQuad',
-                  'delay':2500
+                  'delay':2000
                 });
                $("#dragon, #sleep").lazylinepainter('paint');
 
@@ -242,26 +243,26 @@ svg {
                     'strokeWidth': 0.8,
                     'strokeColor': "white",
                   'ease': 'easeInOutQuad',
-                  'delay':4500
+                  'delay':3000
                 });
                $("#welcome").lazylinepainter('paint');
 
 
-          $("#middle1").lazylinepainter({
+          $("#middle1, #rose1").lazylinepainter({
                     'svgData': svgData,
-                    'strokeWidth': 4,
+                    'strokeWidth': 7,
                     'strokeColor': "white",
                   'ease': 'easeInOutQuad',
-                    'delay':2000
+                    'delay':1000
                 });
-                $("#middle1").lazylinepainter('paint');
+                $("#middle1, #rose1").lazylinepainter('paint');
 
           $("#top1, #top2,#top3").lazylinepainter({
                     'svgData': svgData,
-                    'strokeWidth': 3,
+                    'strokeWidth': 7,
                     'strokeColor': "white",
                   'ease': 'easeInOutQuad',
-                    'delay':2000
+                    'delay':1000
                 });
                  $("#top1, #top2,#top3").lazylinepainter('paint');
         })
@@ -856,7 +857,7 @@ $(window).load(function() {
     });
     $("#resume-pannel").hide();
     //$("[id=flower]").fadeTo(2000,1);
-    setTimeout(function(){$(" #wel-title, #flowerA, #flowerB").fadeTo(1500,1);}, 500);
+    setTimeout(function(){$(" #wel-title, #flowerA, #flowerB").fadeTo(1500,1);}, 1200);
      
       //$("#flowerA").animate({width: "500px"});
    // $("#sfont").animate({fontSize: '30px'}, 900);

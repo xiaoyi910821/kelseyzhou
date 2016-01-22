@@ -186,7 +186,7 @@ svg {
            //  document.getElementById("resume-pannel").style.display="none";
              setTimeout(function(){
               document.getElementById("sleep").style.display="none";
-              document.getElementById("catsleep").src="flower/sleep.gif" }, 5300);
+              document.getElementById("catsleep").src="flower/sleep.gif" }, 4700);
 
              function freeze()
              {
@@ -225,17 +225,26 @@ svg {
                     'strokeWidth': 7,
                     'strokeColor': "white",
                   'ease': 'easeInOutQuad',
-                  'delay':1000
+                  'delay':1200
                 });
                $("#bottom1, #bottom2").lazylinepainter('paint');
 
-               $("#dragon, #sleep").lazylinepainter({
+               $("#dragon").lazylinepainter({
                     'svgData': svgData,
                     'strokeWidth': 1,
                     'strokeColor': "white",
                   'ease': 'easeInOutQuad',
                   'delay':2000
                 });
+                $("#sleep").lazylinepainter({
+                    'svgData': svgData,
+                    'strokeWidth': 2.7,
+                    'strokeColor': "white",
+                  'ease': 'easeInOutQuad',
+                  'delay':2000
+                });
+
+
                $("#dragon, #sleep").lazylinepainter('paint');
 
                 $("#welcome").lazylinepainter({

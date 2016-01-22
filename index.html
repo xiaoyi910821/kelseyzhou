@@ -131,7 +131,7 @@ svg image{
 svg {
   height: auto;
   width:100%;
-  z-index: -99;
+   z-index: -99;
 
 }
 #git{
@@ -176,7 +176,7 @@ svg {
            <div id='top3' ></div>
 
             <div id='middle1' ></div>
-               <div id='rose1' ></div>
+
              <div id='dragon' ></div>
              <div id='sleep'></div>
              
@@ -214,14 +214,6 @@ svg {
 
         $(document).ready(function(){
 
-
-          /*var $bottom1 = $('#bottom1');
-          var $bottom2 = $('#bottom2');
-          var $top1 = $('#top1');
-          var $top2 = $('#top2');
-          var $top3 = $('#top3');
-
-
           /**
            * Setup your Lazy Line element.
            * see README file for more settings
@@ -255,16 +247,16 @@ svg {
                $("#welcome").lazylinepainter('paint');
 
 
-          $("#middle1, #rose1").lazylinepainter({
+          $("#middle1").lazylinepainter({
                     'svgData': svgData,
                     'strokeWidth': 4,
                     'strokeColor': "white",
                   'ease': 'easeInOutQuad',
                     'delay':2000
                 });
-                $("#middle1, #rose1").lazylinepainter('paint');
+                $("#middle1").lazylinepainter('paint');
 
-           $("#top1, #top2,#top3").lazylinepainter({
+          $("#top1, #top2,#top3").lazylinepainter({
                     'svgData': svgData,
                     'strokeWidth': 3,
                     'strokeColor': "white",

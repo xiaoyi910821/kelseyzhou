@@ -52,7 +52,7 @@ var svgData = {
         }],
         "dimensions": {
             "width": 300,
-            "height": 250
+            "height": 50
         }
     },
     "middle1": {

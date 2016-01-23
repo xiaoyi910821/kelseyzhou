@@ -39,6 +39,8 @@
     <script src="timeline/js/modernizr.js"></script>
 
 
+
+
 </head>
 <style>
 html{
@@ -282,7 +284,6 @@ svg {
 
     <img src="flower/haitang.gif" id="flowerA" style="float:left; width:30%"></img>
       <img src="flower/flower-tree.png" id="flowerB" style="right:0;bottom:0;width:16%"></img>
-
     
   </div><!--end bg-->
 
@@ -645,12 +646,20 @@ svg {
 
   </section> <!-- cd-timeline -->
   <img src="images/travel.gif" />
+  
+    <div id="thanks">
+        <img src="flower/pad.png" />
+    </div><!-- end thanks -->
         <div id="gallery-title" >
             <em>I am friendly, diligent, and love-traveling.<br>My field of study is information security and software programming.<br>
               feel free to contact me if you have any questions<br>
               <a href="#" id="go-top">Jump to top</a> or <a href="#!" id="loadmore">Load more photos.....</a><br>
           </em>
-        </div><!-- end gallert-title agian -->
+    </div><!-- end gallert-title agian -->
+
+
+
+
 
           <div class="show-photo">
         <section class="Collage effect-parent">
@@ -713,11 +722,9 @@ svg {
           </div>
                      <div class="Image_Wrapper" data-caption="This is some data <u>with</u>html in it">
             <a><img src="data1/images/v.jpg"></a>
-
-          
-
         </section>
       </div><!-- end show mini photos -->
+
         
           <div id="wowslider-container1">
   <div class="ws_images"><ul>
@@ -861,9 +868,10 @@ svg {
     </script>
 <script>
 $(window).load(function() {
+  
     $('html, body').animate({
         scrollTop: $("#bg").offset().top
-    });
+    }, 0);
     $("#resume-pannel").hide();
     //$("[id=flower]").fadeTo(2000,1);
     setTimeout(function(){$(" #wel-title, #flowerA, #flowerB").fadeTo(1500,1);}, 1100);
@@ -901,31 +909,6 @@ $(window).load(function() {
 
     //$("#resume").animate({fontSize: '30px'}, 900);
 
-  $(window).scroll(function(){
-         $("#edu-title, #edu-subtitle").css("opacity", 1-($(window).scrollTop()-260)/100);
-        $("#dragon, #catsleep, #flowerB").css("opacity", 1-($(window).scrollTop()-200)/100);
-
-    $("[id=nc]").css("opacity", ($(window).scrollTop()-350)/100);
-    $("[id=nt]").css("opacity", ($(window).scrollTop()-410)/100);
-    $("#book").css("opacity", ($(window).scrollTop()-510)/100);
-
-   $("#im").css("opacity", ($(window).scrollTop()-430)/100);
-   $("[id=cc]").css("opacity", ($(window).scrollTop()-470)/100);
-    $("[id=snow]").css("opacity", ($(window).scrollTop()-490)/100);
-   $("[id=pc]").css("opacity", ($(window).scrollTop()-520)/100);
-    $("[id=pt]").css("opacity", ($(window).scrollTop()-600)/100);
-    $("#train, #scrollme").css("opacity", ($(window).scrollTop()-620)/100);
-    $("#bye").css("opacity", ($(window).scrollTop()-820)/100);
-     $("#hello, #gallery-title").css("opacity", ($(window).scrollTop()-900)/100);
-
-
-      $("#git").css("opacity", ($(window).scrollTop()-900)/800-0.1);
-    $("#overlay2").css("opacity", ($(window).scrollTop()-900)/400);
-    $("[id=time-title]").css("opacity", ($(window).scrollTop()-1100)/200);
-    
-    
-  });
-
 
 
     $("#resume").click(function(){
@@ -941,10 +924,11 @@ $(window).load(function() {
 
     $("#learn-more").click(function() {
       // $("body.mainpage").css('overflowY', 'scroll');
-     // alert("works");
+     
     $('html, body').animate({
-        scrollTop: $("#wel-title").offset().top
+        scrollTop: $("#edu-title").offset().top - $(window).height()+ $("#book").height()
     }, 1000);
+   // alert($(window).scrollTop()-$(window).height());
     //$("#resume-pannel").hide();
 
     //$("body.mainpage").css('overflowY', 'scroll');
@@ -981,6 +965,37 @@ $(window).load(function() {
               // show indicators (requires debug extension)
              // scene.addIndicators();
            });
+</script>
+<script>
+var height=$(window).height();
+  $(window).scroll(function(){
+    //alert($(window).scrollTop();
+   // alert($(window).scrollTop());
+  // alert($(window).height());
+         $("#edu-title, #edu-subtitle").css("opacity", 1-($(window).scrollTop()-0.388*height)/100);
+        $("#dragon, #catsleep, #flowerB").css("opacity", 1-($(window).scrollTop()-0.298*height)/100);
+
+        $("[id=nc]").css("opacity", ($(window).scrollTop()-0.52*height)/100);
+    
+    $("[id=nt]").css("opacity", ($(window).scrollTop()-0.61*height)/100);
+    $("#book").css("opacity", ($(window).scrollTop()-0.76*height)/100);
+
+   $("#im").css("opacity", ($(window).scrollTop()-0.64*height)/100);
+   $("[id=cc]").css("opacity", ($(window).scrollTop()-0.70*height)/100);
+    $("[id=snow]").css("opacity", ($(window).scrollTop()-0.731*height)/100);
+   $("[id=pc]").css("opacity", ($(window).scrollTop()-0.78*height)/100);
+    $("[id=pt]").css("opacity", ($(window).scrollTop()-0.895*height)/100);
+    $("#train, #scrollme").css("opacity", ($(window).scrollTop()-0.925*height)/100);
+    $("#bye").css("opacity", ($(window).scrollTop()-1.223*height)/100);
+     $("#hello, #gallery-title").css("opacity", ($(window).scrollTop()-1.343*height)/100);
+
+
+      $("#git").css("opacity", ($(window).scrollTop()-1.343*height)/800-0.1);
+    $("#overlay2").css("opacity", ($(window).scrollTop()-1.343*height)/400);
+    $("[id=time-title]").css("opacity", ($(window).scrollTop()-1.641*height)/200);
+    
+    
+  });
 </script>
 
   <script src="fold/oridomi.min.js"></script>

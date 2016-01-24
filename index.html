@@ -178,7 +178,7 @@ svg {
             <div id='bottom2'  ></div>
           <div id='top1' ></div>
           <div id='top2' ></div>
-          <div id='rose1' ></div>
+         
            <div id='top3' ></div>
 
             <div id='middle1' ></div>
@@ -225,14 +225,14 @@ svg {
            * see README file for more settings
            */
 
-               $("#bottom1, #bottom2, #rose1").lazylinepainter({
+               $("#bottom1, #bottom2").lazylinepainter({
                     'svgData': svgData,
                     'strokeWidth': 7,
                     'strokeColor': "white",
                   'ease': 'easeInOutQuad',
                   'delay':1200
                 });
-               $("#bottom1, #bottom2, #rose1").lazylinepainter('paint');
+               $("#bottom1, #bottom2").lazylinepainter('paint');
 
               /* $("#dragon").lazylinepainter({
                     'svgData': svgData,

@@ -21,7 +21,7 @@
 	margin-left: 35%;
 	margin-top: 5%;
 }
-#gallery-title{
+.gallery-title{
 	word-spacing: 4px;
 	text-align: center;
 	color: black;
@@ -31,16 +31,16 @@
 	font-size: 24px;
 	z-index: 1000;
 }
-#gallery-title em{
+.gallery-title em{
 	font-variant: normal;
 	padding: 2%;
 	font-size: 20px;
 }
-#gallery-title a{
+.gallery-title a{
 	text-decoration: none;
 	color: black;
 }
-#gallery-title a:hover, #gallery-title a:visited{
+.gallery-title a:hover, .gallery-title a:visited{
 	color: gray;
 }
 
@@ -83,6 +83,38 @@
   	text-decoration: none;
   	color:white;
   }
+
 .effect-parent{
 	display: none;
 }
+
+  .thanks{
+  	width: 100%;
+  	min-height: 520px;
+     }
+
+    .layer1, .layer2{
+    	background-size: contain;
+    	background-repeat: no-repeat;
+       	position: absolute;
+    }
+  #pad1{
+  	background-image: url(../pad1.png);
+
+  }
+   #pad2{
+  	background-image: url(../pad2.png);
+
+  }
+     #pad2-2{
+  	background-image: url(../pad2-2.png);
+
+  }
+       #pad3{
+  	background-image: url(../pad3.png);
+
+  }
+         #pad4{
+  	background-image: url(../pad4.png);
+
+  }

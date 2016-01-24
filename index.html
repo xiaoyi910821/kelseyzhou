@@ -396,7 +396,7 @@ svg {
 
           <div id="hello" style="font-size:30px">HELLO NEW LIFE</div>
 
-          <div id="gallery-title">
+          <div id="gallery-title" class="gallery-title">
             My name is kelsey zhou<br>
             Currently I live at san francisco bay area, California. <br>
             I am looking for full-time job at the field of software engineering.<br>
@@ -646,20 +646,95 @@ svg {
 
   </section> <!-- cd-timeline -->
   <img src="images/travel.gif" />
-  
-    <div id="thanks">
-        <img src="flower/pad.png" />
-    </div><!-- end thanks -->
-        <div id="gallery-title" >
+        <div id="self" class="gallery-title">
             <em>I am friendly, diligent, and love-traveling.<br>My field of study is information security and software programming.<br>
               feel free to contact me if you have any questions<br>
-              <a href="#" id="go-top">Jump to top</a> or <a href="#!" id="loadmore">Load more photos.....</a><br>
           </em>
-    </div><!-- end gallert-title agian -->
+  </div><!-- end gallert-title agian -->
+     <!-- <div class="thanks">
+        <div class="layer1" id="pad1" style="height:35%;min-height:200px;width:15%">
+        </div>
 
+        <div class="layer1" id="pad2" style="height:35%;min-height:200px;width:24%">
+        </div>
 
+        <div class="layer1" id="pad2-2" style="height:25%;min-height:150px;width:26%">
+        </div>
 
+        <div class="layer2" id="pad3" style="height:31%;min-height:180px;width:38%">
+        </div>
 
+        <div class="layer2" id="pad4" style="height:40%;min-height:220px;width:27%">
+        </div>
+      
+    </div>-->
+    <script>
+window.onload=myfunction;
+    function myfunction()
+    {
+    var layer1 = document.getElementsByClassName("layer1");
+    var length1=layer1.length;
+
+    var layer2 = document.getElementsByClassName("layer2");
+
+    var allleft=window.innerWidth/6;
+    //alert($(window).width());
+    for(i=0; i<3; i++)
+    {
+
+      layer1[i].style.left=allleft+"px";
+      allleft+=layer1[i].offsetWidth+ 0.0110726*$(window).width();
+    }
+
+        layer2[0].style.left=layer1[0].style.left
+    layer2[0].style.top=layer1[0].offsetHeight+ layer1[0].offsetTop+0.04477* $(window).height()+"px";
+
+    layer2[1].style.left=layer1[2].style.left
+    layer2[1].style.top=layer1[2].offsetHeight+ layer1[2].offsetTop+0.04477* $(window).height()+"px";
+  }
+  window.onresize= myfunction;
+
+  $.fn.animateRotate = function(start, end, duration) {
+  return this.each(function() {
+    var $elem = $(this);
+
+    $({deg: start}).animate({deg: end}, {
+      duration: duration,
+      step: function(now) {
+        $elem.css({
+           transform: 'rotate(' + now + 'deg)'
+         });
+      }
+    });
+  });
+};
+
+var fired_down=0;
+var fired_up=0;
+$(window).on("scroll",function(){
+  var height=$(window).height();
+  var position=$("#pad1").offset().top;
+  if(fired_down==0)
+  {
+    if($(window).scrollTop()+40 >= (position-height))
+    {
+      $('#pad1').animateRotate(-30, 0, 1000);
+      $('#pad2').animateRotate(60, 0, 1200);
+      $('#pad2-2').animateRotate(150, 0, 1600);
+      $('#pad3').animateRotate(-30, 0, 2000);
+      fired_down=1;
+      //fired_up=0;
+    }
+  }
+
+  if(fired_up==0)
+  {
+    if($(window).scrollTop()+40< (position-height))fired_down=0;
+      
+  }
+
+});
+</script>
 
           <div class="show-photo">
         <section class="Collage effect-parent">
@@ -967,6 +1042,8 @@ $(window).load(function() {
            });
 </script>
 <script>
+ //var x = $("#gallery-title").offset();
+//alert($(window).scrollTop());
 var height=$(window).height();
   $(window).scroll(function(){
     //alert($(window).scrollTop();
@@ -993,6 +1070,9 @@ var height=$(window).height();
       $("#git").css("opacity", ($(window).scrollTop()-1.343*height)/800-0.1);
     $("#overlay2").css("opacity", ($(window).scrollTop()-1.343*height)/400);
     $("[id=time-title]").css("opacity", ($(window).scrollTop()-1.641*height)/200);
+    $("#self").css("opacity", ($(window).scrollTop()-7.0*height)/430);
+    $(".layer1").css("opacity", ($(window).scrollTop()-7.30*height)/470);
+    $("#pad3").css("opacity", ($(window).scrollTop()-7.48*height)/380);
     
     
   });

@@ -234,7 +234,7 @@ svg {
                 });
                $("#bottom1, #bottom2").lazylinepainter('paint');
 
-               $("#dragon").lazylinepainter({
+              /* $("#dragon").lazylinepainter({
                     'svgData': svgData,
                     'strokeWidth': 1,
                     'strokeColor': "white",
@@ -250,7 +250,7 @@ svg {
                 });*/
 
 
-               $("#dragon").lazylinepainter('paint');
+               //$("#dragon").lazylinepainter('paint');
 
                 $("#welcome").lazylinepainter({
                     'svgData': svgData,
@@ -664,7 +664,7 @@ svg {
               feel free to contact me if you have any questions<br>
           </em>
   </div><!-- end gallert-title agian -->
-      <div class="thanks">
+      <div  id="thanks">
         <div class="layer1" id="pad1" style="height:24%;min-height:180px;width:13%;min-width:180px">
         </div>
 
@@ -712,6 +712,8 @@ svg {
 
     layer2[1].style.left=layer1[2].style.left
     layer2[1].style.top=layer1[2].offsetHeight+ layer1[2].offsetTop+0.08477* $(window).height()+"px";
+
+    document.getElementById("thanks").style.height=layer1[1].offsetHeight+layer2[1].offsetHeight+"px";
   }
   window.onresize= myfunction;
 
@@ -737,7 +739,7 @@ $(window).on("scroll",function(){
   var position=$("#pad1").offset().top;
   if(fired_down==0)
   {
-    if($(window).scrollTop() + 10>= (position-height))
+    if($(window).scrollTop() + 5>= (position-height))
     {
       $('#pad1').animateRotate(-50, 0, 800);
       $('#pad2').animateRotate(60, 0, 1000);
@@ -750,7 +752,7 @@ $(window).on("scroll",function(){
 
   if(fired_up==0)
   {
-    if($(window).scrollTop() + 10 < (position-height))fired_down=0;
+    if($(window).scrollTop() + 5 < (position-height))fired_down=0;
       
   }
 
@@ -967,7 +969,7 @@ $(window).load(function() {
   
     $('html, body').animate({
         scrollTop: $("#bg").offset().top
-    }, 0);
+    });
     $("#resume-pannel").hide();
     //$("[id=flower]").fadeTo(2000,1);
     setTimeout(function(){$(" #wel-title, #flowerA, #flowerB").fadeTo(1500,1);}, 1100);

@@ -89,7 +89,8 @@
 
   .thanks{
   	width: 100%;
-  	min-height: 520px;
+  	min-height: 530px;
+    padding-bottom: 3%;
      }
 
     .layer1, .layer2{

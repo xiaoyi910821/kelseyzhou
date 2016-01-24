@@ -240,17 +240,17 @@ svg {
                     'strokeColor': "white",
                   'ease': 'easeInOutQuad',
                   'delay':2000
-                });
-                /*$("#sleep").lazylinepainter({
+                });*/
+                $("#sleep").lazylinepainter({
                     'svgData': svgData,
                     'strokeWidth': 2.7,
                     'strokeColor': "white",
                   'ease': 'easeInOutQuad',
                   'delay':2000
-                });*/
+                });
 
 
-               //$("#dragon").lazylinepainter('paint');
+               $("#sleep").lazylinepainter('paint');
 
                 $("#welcome").lazylinepainter({
                     'svgData': svgData,
@@ -262,14 +262,14 @@ svg {
                $("#welcome").lazylinepainter('paint');
 
 
-          $("#middle1").lazylinepainter({
+          $("#middle1", "rose1").lazylinepainter({
                     'svgData': svgData,
                     'strokeWidth': 7,
                     'strokeColor': "white",
                   'ease': 'easeInOutQuad',
                     'delay':1000
                 });
-                $("#middle1").lazylinepainter('paint');
+                $("#middle1", "rose1").lazylinepainter('paint');
 
           $("#top1, #top2,#top3").lazylinepainter({
                     'svgData': svgData,
@@ -1067,12 +1067,12 @@ $(window).load(function() {
 <script>
  //var x = $("#gallery-title").offset();
 //alert($(window).scrollTop());
-
+  var height=$(window).height();
   $(window).scroll(function(){
     //alert($(window).scrollTop();
    // alert($(window).scrollTop());
   // alert($(window).height());
-  var height=$(window).height();
+
          $("#edu-title, #edu-subtitle").css("opacity", 1-($(window).scrollTop()-0.388*height)/100);
         $("#dragon, #catsleep, #flowerB").css("opacity", 1-($(window).scrollTop()-0.298*height)/100);
 
@@ -1094,9 +1094,9 @@ $(window).load(function() {
       $("#git").css("opacity", ($(window).scrollTop()-1.343*height)/700-0.1);
     $("#overlay2").css("opacity", ($(window).scrollTop()-1.343*height)/400);
     $("[id=time-title]").css("opacity", ($(window).scrollTop()-1.630*height)/170);
-   // $("#self").css("opacity", ($(window).scrollTop()-6.93*height)/490);
-  // $(".layer1").css("opacity", ($(window).scrollTop()-7.10*height)/500);
-  //  $("#pad3").css("opacity", ($(window).scrollTop()-7.23*height)/500);
+    $("#self").css("opacity", ($(window).scrollTop()-6.93*height)/490);
+   $(".layer1").css("opacity", ($(window).scrollTop()-7.10*height)/490);
+    $("#pad3").css("opacity", ($(window).scrollTop()-7.23*height)/490);
     
   });
 </script>

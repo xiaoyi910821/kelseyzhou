@@ -53,8 +53,8 @@ Main components
   left: 18px;
   height: 100%;
   width: 2px;
-  background: #C0C0C0;
-  opacity: 0.8;
+  background: #e0e0e0;
+  opacity: 0.75;
 }
 @media only screen and (min-width: 1170px) {
   #cd-timeline {
@@ -101,7 +101,7 @@ Main components
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  box-shadow: 0 0 0 2px white, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 2px 0 2px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 0 0 2px #383838 , inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 2px 0 2px rgba(0, 0, 0, 0.05);
 }
 .cd-timeline-img img {
   display: block;
@@ -114,7 +114,7 @@ Main components
   margin-top: -12px;
 }
 .cd-timeline-img.cd-picture {
-  background: #380000 ;
+  background: #180000  ;
 }
 .cd-timeline-img.cd-teach {
   background: black;
@@ -123,10 +123,10 @@ Main components
   background: #D0D0D0;
 }
 .cd-timeline-img.cd-second {
-  background: #331a00;
+  background: black;
 }
 .cd-timeline-img.cd-location {
-  background: #000033;
+  background: #000912;
 }
 .cd-timeline-img.cd-final {
   background: black;
@@ -227,7 +227,7 @@ font-family: 'Architects Daughter', cursive;
   clear: both;
 }
 .cd-timeline-content h2 {
-  color: #303e49;
+  color: white;
 }
 .cd-timeline-content p, .cd-timeline-content .cd-read-more, .cd-timeline-content .cd-date {
   font-size: 20px;
@@ -241,7 +241,7 @@ font-family: 'Architects Daughter', cursive;
 }
 .cd-timeline-content .cd-read-more {
   padding: .4em .5em;
-    color: gray;
+    color: silver;
   
 }
 .no-touch .cd-timeline-content .cd-read-more:hover {
@@ -250,12 +250,12 @@ font-family: 'Architects Daughter', cursive;
   }
 .cd-timeline-content .cd-date {
   padding: .8em 0;
-  opacity: .8;
+  opacity: .9;
   float: left;
 
 font-family: 'Poiret One', cursive;
 font-weight: bold;
-color: black;
+color: white;
   }
 .cd-timeline-content::before {
   content: '';
@@ -290,18 +290,18 @@ color: black;
     padding: 1em;
     float: left;
     width: 45%;
-    background-color: rgba(255,255,255, 0.8);
+    background-color: rgba(208,208,208, 0.2);
       border-radius: 0.25em;
-      box-shadow: 0px 2px 0px #F8F8F8;
+      box-shadow: 0px 2px 0px #383838  ;
   }
   .cd-timeline-content .right-pannel{
     text-align: left;
      padding: 1em;
     width: 45%;
     float: right;
-    background-color: rgba(255,255,255, 0.8);
+    background-color: rgba(208,208,208, 0.2);
       border-radius: 0.25em;
-        box-shadow: 0px 2px 0px #F8F8F8;
+        box-shadow: 0px 2px 0px #383838  ;
   }
     .cd-timeline-content #left-skill{
       background: none;

@@ -15,7 +15,7 @@
   <link rel="stylesheet" type="text/css" href="css/custom2.css" />
   <link rel="stylesheet" type="text/css" href="css/common.css" media="all">
   <link rel="stylesheet" type="text/css" href="css/gallery.css">
-  <link rel="stylesheet" type="text/css" href="engine1/slider-style.css" />
+  <link rel="stylesheet" type="text/css" href="css/slider-style.css" />
   <link rel="stylesheet" type="text/css" href="css/show-photo.css" media="all" />
   <link rel="stylesheet" type="text/css" href="css/transitions.css" media="all" />
   <link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
@@ -46,9 +46,12 @@
 html{
  height: 100%;
  width: 100%;
+  cursor: url(images/chalk.png),auto;
 }
 body.mainpage{
+
   background-image: url(images/texture.svg);
+  background-color: black;
    height: 100%;
   width: 100%;
     margin: 0;
@@ -76,7 +79,7 @@ body.mainpage{
 
 
 #bg{
-  cursor: url(images/chalk.png),auto;
+ 
   background-repeat: no-repeat;
   min-height: 100%;
   height: auto;
@@ -188,7 +191,7 @@ svg {
            //  document.getElementById("resume-pannel").style.display="none";
              setTimeout(function(){
               document.getElementById("sleep").style.display="none";
-              document.getElementById("catsleep").src="flower/sleep.gif" }, 4700);
+              document.getElementById("catsleep").src="flower/sleep.gif" }, 5100);
 
              function freeze()
              {
@@ -391,7 +394,7 @@ svg {
         <div class="spacer s_viewport"></div>
       </div>
       <img id="bridge" src="images/bridge.gif"></img>
-           <a href="https://github.com/xiaoyi910821" ><img id="git"style="position: absolute; right: 0; border: 0" src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"></a>
+           <a href="https://github.com/xiaoyi910821" ><img id="git"style="position: absolute; right: 0; border: 0" src="https://camo.githubusercontent.com/52760788cde945287fbb584134c4cbc2bc36f904/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f77686974655f6666666666662e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_white_ffffff.png"></a>
       <div id="gallery">
 
           <div id="hello" style="font-size:30px">HELLO NEW LIFE</div>
@@ -633,7 +636,8 @@ svg {
       <div class="cd-timeline-content">
       <div class="right-pannel" id="right-skill">
           Skills & Tools:<br>
-          Wordpress
+          Wordpress<br>
+          Node.js
         </div>
 
         <div class="left-pannel">
@@ -645,31 +649,48 @@ svg {
 
 
   </section> <!-- cd-timeline -->
-  <img src="images/travel.gif" />
+  <!--<img src="images/pop.gif" style="opacity:0.7;margin-bottom:19%" />-->
+
+<div id="cf">
+  <img src="images/girl.svg" class="bottom" style="width:47%" />
+  <img src="images/girl.svg" style="width:47%;opacity:0" />
+  <img class="top" src="images/london.svg" />
+</div>  
+
         <div id="self" class="gallery-title">
-            <em>I am friendly, diligent, and love-traveling.<br>My field of study is information security and software programming.<br>
+            <em>I am friendly, diligent, and vivid. I love cat.<br>
+              My hobbies include ski, travel, and eating delicious food.<br>
+              My field of study is information security and software programming.<br>
               feel free to contact me if you have any questions<br>
           </em>
   </div><!-- end gallert-title agian -->
-     <!-- <div class="thanks">
-        <div class="layer1" id="pad1" style="height:35%;min-height:200px;width:15%">
+      <div class="thanks">
+        <div class="layer1" id="pad1" style="height:24%;min-height:180px;width:13%;min-width:180px">
         </div>
 
-        <div class="layer1" id="pad2" style="height:35%;min-height:200px;width:24%">
+        <div class="layer1" id="pad2" style="height:31%;min-height:210px;width:23%;min-width:250px">
+          ScrollMagic is a complete rewrite of its predecessor Superscrollorama by John Polacek. 
+          <a href="http://scrollmagic.io" target="blank" >more..</a>
+
         </div>
 
-        <div class="layer1" id="pad2-2" style="height:25%;min-height:150px;width:26%">
+        <div class="layer1" id="pad2-2" style="height:25%;min-height:150px;width:24%;min-width:270px">
+          The web is flat, but now you can fold it up. by Dan.
+          <a href="http://oridomi.com" target="blank">more..</a>
         </div>
 
-        <div class="layer2" id="pad3" style="height:31%;min-height:180px;width:38%">
+        <div class="layer2" id="pad3" style="height:31%;min-height:180px;width:38%;min-width:400px">
+          SuperScrollorama is powered by TweenMax and the Greensock Tweening Engine.
+           <a href="http://johnpolacek.github.io/superscrollorama/" target="blank" >more..</a>
         </div>
 
-        <div class="layer2" id="pad4" style="height:40%;min-height:220px;width:27%">
+        <div class="layer2" id="pad4" style="height:40%;min-height:220px;width:27%;min-width:320px">
         </div>
       
-    </div>-->
+    </div>
     <script>
-/*window.onload=myfunction;
+
+    window.onload=myfunction;
     function myfunction()
     {
     var layer1 = document.getElementsByClassName("layer1");
@@ -677,20 +698,20 @@ svg {
 
     var layer2 = document.getElementsByClassName("layer2");
 
-    var allleft=window.innerWidth/6;
+    var allleft=window.innerWidth/8;
     //alert($(window).width());
     for(i=0; i<3; i++)
     {
 
       layer1[i].style.left=allleft+"px";
-      allleft+=layer1[i].offsetWidth+ 0.0110726*$(window).width();
+      allleft+=layer1[i].offsetWidth+ 0.0280726*$(window).width();
     }
 
         layer2[0].style.left=layer1[0].style.left
-    layer2[0].style.top=layer1[0].offsetHeight+ layer1[0].offsetTop+0.04477* $(window).height()+"px";
+    layer2[0].style.top=layer1[0].offsetHeight+ layer1[0].offsetTop+0.08477* $(window).height()+"px";
 
     layer2[1].style.left=layer1[2].style.left
-    layer2[1].style.top=layer1[2].offsetHeight+ layer1[2].offsetTop+0.04477* $(window).height()+"px";
+    layer2[1].style.top=layer1[2].offsetHeight+ layer1[2].offsetTop+0.08477* $(window).height()+"px";
   }
   window.onresize= myfunction;
 
@@ -716,12 +737,12 @@ $(window).on("scroll",function(){
   var position=$("#pad1").offset().top;
   if(fired_down==0)
   {
-    if($(window).scrollTop()+40 >= (position-height))
+    if($(window).scrollTop() + 10>= (position-height))
     {
-      $('#pad1').animateRotate(-30, 0, 1000);
-      $('#pad2').animateRotate(60, 0, 1200);
-      $('#pad2-2').animateRotate(150, 0, 1600);
-      $('#pad3').animateRotate(-30, 0, 2000);
+      $('#pad1').animateRotate(-50, 0, 800);
+      $('#pad2').animateRotate(60, 0, 1000);
+      $('#pad2-2').animateRotate(150, 0, 1200);
+      $('#pad3').animateRotate(-30, 0, 1400);
       fired_down=1;
       //fired_up=0;
     }
@@ -729,11 +750,11 @@ $(window).on("scroll",function(){
 
   if(fired_up==0)
   {
-    if($(window).scrollTop()+40< (position-height))fired_down=0;
+    if($(window).scrollTop() + 10 < (position-height))fired_down=0;
       
   }
 
-});*/
+});
 </script>
 
           <div class="show-photo">
@@ -1067,13 +1088,12 @@ var height=$(window).height();
      $("#hello, #gallery-title").css("opacity", ($(window).scrollTop()-1.343*height)/100);
 
 
-      $("#git").css("opacity", ($(window).scrollTop()-1.343*height)/800-0.1);
+      $("#git").css("opacity", ($(window).scrollTop()-1.343*height)/700-0.1);
     $("#overlay2").css("opacity", ($(window).scrollTop()-1.343*height)/400);
-    $("[id=time-title]").css("opacity", ($(window).scrollTop()-1.641*height)/200);
-    $("#self").css("opacity", ($(window).scrollTop()-7.0*height)/430);
-    $(".layer1").css("opacity", ($(window).scrollTop()-7.30*height)/470);
-    $("#pad3").css("opacity", ($(window).scrollTop()-7.48*height)/380);
-    
+    $("[id=time-title]").css("opacity", ($(window).scrollTop()-1.630*height)/170);
+    $("#self").css("opacity", ($(window).scrollTop()-6.93*height)/290);
+   $(".layer1").css("opacity", ($(window).scrollTop()-7.10*height)/500);
+    $("#pad3").css("opacity", ($(window).scrollTop()-7.23*height)/500);
     
   });
 </script>

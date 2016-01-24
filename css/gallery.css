@@ -1,15 +1,14 @@
 #gallery{
 	width: 100%;
 	height: auto;
-	background-color: #e8e8e8;
-	background-image: url(../images/paper.png);
-	
+	background-color: black;	
+	background-image: url(../images/texture.svg);
 	text-align: center;
 	font-family: 'Architects Daughter', cursive;
 	font-size: 15px;
 	padding-top: 1%;
-	box-shadow: 0px 0px 4px 0px silver;
-
+	color:#e8e8e8;
+	
 	}
 .show-photo{
 	padding-left: 6px;
@@ -24,16 +23,16 @@
 .gallery-title{
 	word-spacing: 4px;
 	text-align: center;
-	color: black;
+	color: white;
 	font-variant: small-caps;
-	padding: 3% 0;
+	padding: 3.5% 0;
 	line-height: 40px;
 	font-size: 24px;
 	z-index: 1000;
 }
 .gallery-title em{
 	font-variant: normal;
-	padding: 2%;
+	padding: 3%;
 	font-size: 20px;
 }
 .gallery-title a{
@@ -94,27 +93,110 @@
      }
 
     .layer1, .layer2{
-    	background-size: contain;
+    	padding: 3%;
+    	text-align: left;
+    	text-indent: 4px;
+    	line-height: 33px;
+    	background-size: 100% 100%;
     	background-repeat: no-repeat;
        	position: absolute;
+       	font-size: 18px;
+       	color: :#e8e8e8;
+       	opacity: 0;
+       	word-wrap: break-word;
     }
+.layer1 a, .layer2 a{
+	color: white;
+	text-decoration: none;
+}
   #pad1{
-  	background-image: url(../pad1.png);
-
+  	background-image: url(../images/letter.gif);
+  	background-position: bottom right;
   }
    #pad2{
-  	background-image: url(../pad2.png);
+  	background-image: url(../images/pad2.png);
 
   }
+  #pad2:before, #pad2-2:before, #pad3:before{
+  	content:'\201C';
+  	color:white;
+  	font-size: 30px;
+ }
+
+
+ 
      #pad2-2{
-  	background-image: url(../pad2-2.png);
+  	background-image: url(../images/pad2-2.png);
 
   }
        #pad3{
-  	background-image: url(../pad3.png);
+  	background-image: url(../images/pad3.png);
 
   }
          #pad4{
-  	background-image: url(../pad4.png);
+  	background-image: url(../images/pad4.gif);
+  	opacity: 0.8;
 
   }
+  #cf {
+  	padding-top: 4%;
+  position:relative;
+  margin:0 auto;
+  width: 100%;
+}
+.top {
+	width: 75%;
+	left: 12.5%;
+	position: absolute;
+}
+.bottom{
+	position: absolute;
+	left: 25%;
+}
+
+
+.top {
+animation-name: FadeOut;
+animation-timing-function: ease-in-out;
+animation-iteration-count: infinite;
+animation-duration: 4s;
+animation-direction: alternate;
+}
+  @keyframes FadeOut {
+  0% {
+  opacity:1;
+}
+30% {
+opacity:1;
+}
+75% {
+opacity:0;
+}
+100% {
+opacity:0;
+}
+}
+
+  @keyframes FadeIn {
+  0% {
+  opacity:0;
+}
+30% {
+opacity:0;
+}
+75% {
+opacity:1;
+}
+100% {
+opacity:1;
+}
+}
+
+
+.bottom{
+	animation-name: FadeIn;
+animation-timing-function: ease-in-out;
+animation-iteration-count: infinite;
+animation-duration: 4s;
+animation-direction: alternate;
+}

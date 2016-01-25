@@ -89,7 +89,7 @@ cursor: url(chalk.png),auto;
 }
 #dragon{
 	position: absolute;
-	opacity: 0.85;
+	opacity: 0.7s;
 	bottom: 0;
 	right: 13%;
 	min-width: 90px;

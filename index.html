@@ -189,7 +189,7 @@ svg {
               <img id="catsleep"style="width:35%;bottom:0;left:0" ></img>
              <script>
            //  document.getElementById("resume-pannel").style.display="none";
-            /* setTimeout(function(){
+             setTimeout(function(){
               document.getElementById("sleep").style.display="none";
               document.getElementById("catsleep").src="flower/sleep.gif" }, 5000);
 
@@ -209,7 +209,7 @@ svg {
               }   //alert($freeze.innerHTML);
 
               
-             }*/
+             }
              </script>
         </div>
     </div>
@@ -221,6 +221,23 @@ svg {
         $(document).ready(function(){
           $("#wel-title").fadeTo(1500,1);
    $("#flowerA").fadeTo(3500,1);
+           $("#resume").animate({
+      top:"38%",
+      opacity:"1"
+
+    },1700);
+            $("#learn-more").animate({
+      top:"44%",
+      opacity:"1"
+
+    },2400);
+
+    $("#welcome").animate({
+      top:"50%",
+      opacity:"1"
+
+    },3000);
+
           /**
            * Setup your Lazy Line element.
            * see README file for more settings
@@ -281,6 +298,13 @@ svg {
                 });
                  $("#top1, #top2,#top3").lazylinepainter('paint');
         })
+     var baloon = $('#welcome, #resume, #learn-more, #wel-title');
+
+   function runIt() {
+       baloon.animate({top:'+=8'}, 1000);
+       baloon.animate({top:'-=8'}, 1000, runIt);
+   }
+   setTimeout(function(){runIt();}, 3100);
 
       })( jQuery );
 
@@ -981,30 +1005,7 @@ $(window).load(function() {
 
 
     //$("#welcome").fadeTo(1500,1);
-        $("#resume").animate({
-      top:"38%",
-      opacity:"1"
 
-    },1700);
-            $("#learn-more").animate({
-      top:"44%",
-      opacity:"1"
-
-    },2400);
-
-    $("#welcome").animate({
-      top:"50%",
-      opacity:"1"
-
-    },3000);
-
-     var baloon = $('#welcome, #resume, #learn-more, #wel-title');
-
-   function runIt() {
-       baloon.animate({top:'+=8'}, 1000);
-       baloon.animate({top:'-=8'}, 1000, runIt);
-   }
-   setTimeout(function(){runIt();}, 3100);
 
     //$("#resume").animate({fontSize: '30px'}, 900);
 

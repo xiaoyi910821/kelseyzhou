@@ -103,7 +103,7 @@ body.mainpage{
 }
 #overlay2{
   position: absolute;
-  background-image: url(images/blackboard_blur.jpg);
+  background-image: url(images/blackboard.jpg);
   width: 100%;
   height: 100%;
   opacity: 0;
@@ -314,7 +314,7 @@ svg {
 
     </script>
 
-    <img src="flower/haitang.gif" id="flowerA" style="float:left; width:30%"></img>
+    <img src="flower/haitang.svg" id="flowerA" style="float:left; width:30%"></img>
       <img src="flower/flower-tree.png" id="flowerB" style="right:0;bottom:0;width:16%"></img>
     
   </div><!--end bg-->
@@ -880,8 +880,8 @@ $(window).on("scroll",function(){
     if($(window).scrollTop() + 5>= (position-height))
     {
       $('#pad1').animateRotate(-50, 0, 800);
-      $('#pad2').animateRotate(60, 0, 800);
-      $('#pad2-2').animateRotate(90, 0, 1000);
+      $('#pad2').animateRotate(40, 0, 800);
+      $('#pad2-2').animateRotate(40, 0, 1000);
       $('#pad3').animateRotate(-30, 0, 1000);
       fired_down=1;
       //fired_up=0;

@@ -182,8 +182,8 @@ svg {
            <div id='top3' ></div>
 
             <div id='middle1' ></div>
+<svg id="dragon" style="width:230px;height:250px" version="1.1"></svg>
 
-             <div id='dragon' ></div>
              <div id='sleep'></div>
              
               <img id="catsleep"style="width:35%;bottom:0;left:0" ></img>
@@ -234,13 +234,13 @@ svg {
                 });
                $("#bottom1, #bottom2").lazylinepainter('paint');
 
-              /* $("#dragon").lazylinepainter({
+               $("#dragon").lazylinepainter({
                     'svgData': svgData,
-                    'strokeWidth': 1,
+                    'strokeWidth': 2.6,
                     'strokeColor': "white",
                   'ease': 'easeInOutQuad',
                   'delay':2000
-                });*/
+                });
                 $("#sleep").lazylinepainter({
                     'svgData': svgData,
                     'strokeWidth': 2.7,
@@ -250,7 +250,7 @@ svg {
                 });
 
 
-               $("#sleep").lazylinepainter('paint');
+               $("#sleep, #dragon").lazylinepainter('paint');
 
                 $("#welcome").lazylinepainter({
                     'svgData': svgData,

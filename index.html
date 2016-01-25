@@ -221,12 +221,12 @@ svg {
 
         $(document).ready(function(){
           $("#wel-title").fadeTo(1500,1);
-   $("#flowerA, #flowerB").fadeTo(3500,0.9);
+        
            $("#resume").animate({
       top:"38%",
       opacity:"1"
 
-    },1700);
+    },2000);
             $("#learn-more").animate({
       top:"44%",
       opacity:"1"
@@ -238,6 +238,9 @@ svg {
       opacity:"1"
 
     },3000);
+
+    setTimeout(function(){$("#flowerA, #flowerB").fadeTo(3500,0.9);}, 1500);
+    
 
           /**
            * Setup your Lazy Line element.

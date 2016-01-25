@@ -70,13 +70,13 @@
 }
 .icon-eye .content {
     background: rgba(0,0,0, 0.7);
-    height: 0;
-    color:white;
+    height: 120px;
+        color:white;
     text-align: center;
     line-height: 30px;
         -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
     filter: alpha(opacity=50);
-    opacity: 0.5;
+    opacity: 0;
     width: 100%;
     overflow: hidden;
     -webkit-transform: rotate(-33.5deg) translate(-112px, 166px);

@@ -178,6 +178,7 @@ svg {
             <div id='bottom2'  ></div>
           <div id='top1' ></div>
           <div id='top2' ></div>
+          <div id='rose1' ></div>
          
            <div id='top3' ></div>
 
@@ -220,7 +221,7 @@ svg {
 
         $(document).ready(function(){
           $("#wel-title").fadeTo(1500,1);
-   $("#flowerA, #flowerB").fadeTo(3500,1);
+   $("#flowerA, #flowerB").fadeTo(3500,0.9);
            $("#resume").animate({
       top:"38%",
       opacity:"1"
@@ -243,14 +244,14 @@ svg {
            * see README file for more settings
            */
 
-               $("#bottom1, #bottom2").lazylinepainter({
+               $("#bottom1, #bottom2, #rose1").lazylinepainter({
                     'svgData': svgData,
                     'strokeWidth': 7,
                     'strokeColor': "white",
                   'ease': 'easeInOutQuad',
                   'delay':1200
                 });
-               $("#bottom1, #bottom2").lazylinepainter('paint');
+               $("#bottom1, #bottom2, #rose1").lazylinepainter('paint');
 
                $("#dragon").lazylinepainter({
                     'svgData': svgData,
@@ -310,7 +311,7 @@ svg {
 
     </script>
 
-    <img src="flower/ground.png" id="flowerA" style="float:left; width:36%"></img>
+    <img src="flower/haitang.gif" id="flowerA" style="float:left; width:30%"></img>
       <img src="flower/flower-tree.png" id="flowerB" style="right:0;bottom:0;width:16%"></img>
     
   </div><!--end bg-->

@@ -22,6 +22,8 @@
   <link rel="stylesheet" href="css/timeline-style.css">
    <link rel="stylesheet" type="text/css" href="css/hover.css" />
 
+
+
   <script type="text/javascript" src="js/_dependent/greensock/TweenMax.min.js"></script>
   <script type="text/javascript" src="js/_dependent/jquery.min.js"></script>
   <script type="text/javascript" src="js/_examples/general.js"></script>
@@ -37,6 +39,7 @@
     <script src="draw/examples/js/svgdata.js"></script>
     <script src="timeline/js/main.js"></script>
     <script src="timeline/js/modernizr.js"></script>
+
 
 
 
@@ -314,7 +317,7 @@ svg {
 
     </script>
 
-    <img src="flower/haitang.svg" id="flowerA" style="float:left; width:30%"></img>
+    <img src="flower/haitang.svg" id="flowerA" style="float:left; width:30%;top:0;position:absolute"></img>
       <img src="flower/flower-tree.png" id="flowerB" style="right:0;bottom:0;width:16%"></img>
     
   </div><!--end bg-->
@@ -923,11 +926,17 @@ $(window).on("scroll",function(){
      <script src="jquery.collagePlus.min.js"></script>
     <script src="jquery.removeWhitespace.min.js"></script>
     <script src="jquery.collageCaption.min.js"></script>
+
     <script type="text/javascript">
+
 
     // All images need to be loaded for this plugin to work so
     // we end up waiting for the whole window to load in this example
     $(window).load(function () {
+
+
+
+
         $("#loadmore").click(function(){
           $('.effect-parent').show();
             collage();

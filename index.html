@@ -687,105 +687,13 @@ svg {
             <em>I am friendly, diligent, and vivid. I love cat.<br>
               My hobbies include ski, travel, and eating delicious food.<br>
               My field of study is information security and software programming.<br>
-              feel free to contact me if you have any questions<br>
+              feel free to contact me if you have any questions<br><br>
+
+              <a href="#" id="go-top">Go to top </a> or <a href="#!" id="loadmore">Load more photos</a>
           </em>
-  </div><!-- end gallert-title agian -->
-      <div  id="thanks">
-        <div class="layer1" id="pad1" style="height:20%;min-height:140px;width:10%;min-width:140px">
-        </div>
 
-        <div class="layer1" id="pad2" style="height:31%;min-height:210px;width:23%;min-width:250px">
-          ScrollMagic is a complete rewrite of its predecessor Superscrollorama by John Polacek. 
-          <a href="http://scrollmagic.io" target="blank" >more..</a>
-
-        </div>
-
-        <div class="layer1" id="pad2-2" style="height:25%;min-height:150px;width:24%;min-width:270px">
-          The web is flat, but now you can fold it up. by Dan.
-          <a href="http://oridomi.com" target="blank">more..</a>
-        </div>
-
-        <div class="layer2" id="pad3" style="height:31%;min-height:180px;width:38%;min-width:400px">
-          SuperScrollorama is powered by TweenMax and the Greensock Tweening Engine.
-           <a href="http://johnpolacek.github.io/superscrollorama/" target="blank" >more..</a>
-        </div>
-
-        <div class="layer2" id="pad4" style="height:40%;min-height:220px;width:27%;min-width:320px">
-        </div>
-      
-    </div>
-    <script>
-
-    window.onload=myfunction;
-    function myfunction()
-    {
-    var layer1 = document.getElementsByClassName("layer1");
-    var length1=layer1.length;
-
-    var layer2 = document.getElementsByClassName("layer2");
-
-    var allleft=window.innerWidth/8;
-    //alert($(window).width());
-    for(i=0; i<3; i++)
-    {
-
-      layer1[i].style.left=allleft+"px";
-      allleft+=layer1[i].offsetWidth+ 0.0280726*$(window).width();
-    }
-
-        layer2[0].style.left=layer1[0].style.left
-    layer2[0].style.top=layer1[1].offsetHeight+ layer1[1].offsetTop+0.08477* $(window).height()+"px";
-
-    layer2[1].style.left=layer1[2].style.left
-    layer2[1].style.top=layer1[2].offsetHeight+ layer1[2].offsetTop+0.08477* $(window).height()+"px";
-
-    document.getElementById("thanks").style.height=layer1[1].offsetHeight+layer2[1].offsetHeight+"px";
-  }
-  window.onresize= myfunction;
-
-  $.fn.animateRotate = function(start, end, duration) {
-  return this.each(function() {
-    var $elem = $(this);
-
-    $({deg: start}).animate({deg: end}, {
-      duration: duration,
-      step: function(now) {
-        $elem.css({
-           transform: 'rotate(' + now + 'deg)'
-         });
-      }
-    });
-  });
-};
-
-var fired_down=0;
-var fired_up=0;
-$(window).on("scroll",function(){
-  var height=$(window).height();
-  var position=$("#pad1").offset().top;
-  if(fired_down==0)
-  {
-    if($(window).scrollTop() + 5>= (position-height))
-    {
-      $('#pad1').animateRotate(-50, 0, 800);
-      $('#pad2').animateRotate(60, 0, 1000);
-      $('#pad2-2').animateRotate(150, 0, 1200);
-      $('#pad3').animateRotate(-30, 0, 1400);
-      fired_down=1;
-      //fired_up=0;
-    }
-  }
-
-  if(fired_up==0)
-  {
-    if($(window).scrollTop() + 5 < (position-height))fired_down=0;
-      
-  }
-
-});
-</script>
-
-          <div class="show-photo">
+        </div><!-- end gallert-title agian -->
+        <div class="show-photo">
         <section class="Collage effect-parent">
           <div class="Image_Wrapper" data-caption="This is some data <u>with</u>html in it">
             <a><img src="data1/images/q.jpg" width:"600px" height:"600px"></a>
@@ -850,7 +758,7 @@ $(window).on("scroll",function(){
       </div><!-- end show mini photos -->
 
         
-          <div id="wowslider-container1">
+    <div id="wowslider-container1">
   <div class="ws_images"><ul>
     <li><img src="data1/images/1.jpg"  id="wows1_0"/></li>
     <li><img src="data1/images/2.jpg"  id="wows1_1"/></li>
@@ -888,6 +796,105 @@ $(window).on("scroll",function(){
     </div>  
   <script type="text/javascript" src="engine1/wowslider.js"></script>
   <script type="text/javascript" src="engine1/script.js"></script>
+  <div style="width:100%;padding-top:5%"></div>
+      <div  id="thanks">
+        <div class="layer1" id="pad1" style="height:31%;min-height:210px;width:10%;min-width:140px">
+          <img src="images/clock.png" style="margin-top:100%;width:100%"/>
+        </div>
+
+        <div class="layer1" id="pad2" style="height:31%;min-height:210px;width:23%;min-width:250px">
+          ScrollMagic is a complete rewrite of its predecessor Superscrollorama by John Polacek. 
+          <a href="http://scrollmagic.io" target="blank" >more..</a>
+
+        </div>
+
+        <div class="layer1" id="pad2-2" style="height:25%;min-height:150px;width:24%;min-width:270px">
+          The web is flat, but now you can fold it up. by Dan.
+          <a href="http://oridomi.com" target="blank">more..</a>
+        </div>
+
+        <div class="layer2" id="pad3" style="height:31%;min-height:180px;width:38%;min-width:400px">
+          SuperScrollorama is powered by TweenMax and the Greensock Tweening Engine.
+           <a href="http://johnpolacek.github.io/superscrollorama/" target="blank" >more..</a>
+        </div>
+
+        <div class="layer2" id="pad4" style="height:40%;min-height:220px;width:27%;min-width:320px">
+        </div>
+      
+    </div>
+    <script>
+
+    window.onload=myfunction;
+    function myfunction()
+    {
+    var layer1 = document.getElementsByClassName("layer1");
+    var length1=layer1.length;
+
+    var layer2 = document.getElementsByClassName("layer2");
+
+    var allleft=window.innerWidth/8;
+    //alert($(window).width());
+    for(i=0; i<3; i++)
+    {
+
+      layer1[i].style.left=allleft+"px";
+      allleft+=layer1[i].offsetWidth+ 0.0280726*$(window).width();
+    }
+
+        layer2[0].style.left=layer1[0].style.left
+    layer2[0].style.top=layer1[1].offsetHeight+ layer1[1].offsetTop+0.08477* $(window).height()+"px";
+
+    layer2[1].style.left=layer1[2].style.left
+    layer2[1].style.top=layer1[2].offsetHeight+ layer1[2].offsetTop+0.08477* $(window).height()+"px";
+
+var thanks=document.getElementById("thanks");
+    thanks.style.height=layer1[1].offsetHeight+layer2[1].offsetHeight+"px";
+  }
+  window.onresize= myfunction;
+
+  $.fn.animateRotate = function(start, end, duration) {
+  return this.each(function() {
+    var $elem = $(this);
+
+    $({deg: start}).animate({deg: end}, {
+      duration: duration,
+      step: function(now) {
+        $elem.css({
+           transform: 'rotate(' + now + 'deg)'
+         });
+      }
+    });
+  });
+};
+
+var fired_down=0;
+var fired_up=0;
+$(window).on("scroll",function(){
+  var height=$(window).height();
+  var position=$("#pad1").offset().top;
+  if(fired_down==0)
+  {
+    if($(window).scrollTop() + 5>= (position-height))
+    {
+      $('#pad1').animateRotate(-50, 0, 800);
+      $('#pad2').animateRotate(60, 0, 1000);
+      $('#pad2-2').animateRotate(150, 0, 1200);
+      $('#pad3').animateRotate(-30, 0, 1400);
+      fired_down=1;
+      //fired_up=0;
+    }
+  }
+
+  if(fired_up==0)
+  {
+    if($(window).scrollTop() + 5 < (position-height))fired_down=0;
+      
+  }
+
+});
+</script>
+
+          
 
     </div><!-- end gallery -->
     <div id="footer">
@@ -1097,9 +1104,9 @@ $(window).load(function() {
       $("#git").css("opacity", ($(window).scrollTop()-1.343*height)/700-0.1);
     $("#overlay2").css("opacity", ($(window).scrollTop()-1.343*height)/400);
     $("[id=time-title]").css("opacity", ($(window).scrollTop()-1.630*height)/170);
-    $("#self").css("opacity", ($(window).scrollTop()-6.2029*height)/290);
-   $(".layer1").css("opacity", ($(window).scrollTop()-6.2129*height)/290);
-    $("#pad3").css("opacity", ($(window).scrollTop()-6.2129*height)/290);
+    $("#self").css("opacity", ($(window).scrollTop()-7.1029*height)/490);
+  // $(".layer1").css("opacity", ($(window).scrollTop()-6.2129*height)/290);
+    //$("#pad3").css("opacity", ($(window).scrollTop()-6.2129*height)/290);
     
   });
 </script>

@@ -37,10 +37,10 @@
 }
 .gallery-title a{
 	text-decoration: none;
-	color: black;
+	color: white;
 }
 .gallery-title a:hover, .gallery-title a:visited{
-	color: gray;
+	color: silver;
 }
 
 #bridge{
@@ -90,10 +90,10 @@
   #thanks{
   	width: 100%;
   	min-height: 100px;
-    padding-bottom: 3%;
-     }
+    }
 
     .layer1, .layer2{
+      opacity: 0.8;
     	padding: 3%;
     	text-align: left;
     	text-indent: 4px;
@@ -110,10 +110,10 @@
 	color: white;
 	text-decoration: none;
 }
-  #pad1{
-  	background-image: url(../images/clock.png);
-  	background-position: bottom right;
-  }
+#pad1{
+
+  padding: 1%;
+}
    #pad2{
   	background-image: url(../images/pad2.png);
 

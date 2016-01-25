@@ -182,7 +182,7 @@ svg {
            <div id='top3' ></div>
 
             <div id='middle1' ></div>
-<svg id="dragon" style="width:230px;height:250px" version="1.1"></svg>
+<svg id="dragon" style="width:20%;height:39%" version="1.1"></svg>
 
              <div id='sleep'></div>
              
@@ -191,7 +191,7 @@ svg {
            //  document.getElementById("resume-pannel").style.display="none";
              setTimeout(function(){
               document.getElementById("sleep").style.display="none";
-              document.getElementById("catsleep").src="flower/sleep.gif" }, 5100);
+              document.getElementById("catsleep").src="flower/sleep.gif" }, 5000);
 
              function freeze()
              {
@@ -236,7 +236,7 @@ svg {
 
                $("#dragon").lazylinepainter({
                     'svgData': svgData,
-                    'strokeWidth': 2.6,
+                    'strokeWidth': 2.3,
                     'strokeColor': "white",
                   'ease': 'easeInOutQuad',
                   'delay':2000
@@ -285,8 +285,8 @@ svg {
 
     </script>
 
-    <img src="flower/ground.png" id="flowerA" style="float:left; width:35%"></img>
-      <img src="flower/flower-tree.png" id="flowerB" style="right:0;bottom:0;width:16%"></img>
+    <img src="flower/ground.png" id="flowerA" style="float:left; width:36%"></img>
+      <!--<img src="flower/flower-tree.png" id="flowerB" style="right:0;bottom:0;width:16%"></img>-->
     
   </div><!--end bg-->
 
@@ -972,7 +972,8 @@ $(window).load(function() {
     });
     $("#resume-pannel").hide();
     //$("[id=flower]").fadeTo(2000,1);
-    setTimeout(function(){$(" #wel-title, #flowerA, #flowerB").fadeTo(1500,1);}, 1100);
+    $("#wel-title").fadeTo(1500,1);
+   $("#flowerA").fadeTo(3500,1);
      
       //$("#flowerA").animate({width: "500px"});
    // $("#sfont").animate({fontSize: '30px'}, 900);

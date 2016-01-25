@@ -1,7 +1,7 @@
 #gallery{
 	width: 100%;
 	height: auto;
-	background-color: black;	
+	background-color: #282828 ;	
 	background-image: url(../images/texture.svg);
 	text-align: center;
 	font-family: 'Architects Daughter', cursive;

@@ -262,7 +262,7 @@ svg {
                 });
                 $("#sleep").lazylinepainter({
                     'svgData': svgData,
-                    'strokeWidth': 2.7,
+                    'strokeWidth': 2.4,
                     'strokeColor': "white",
                   'ease': 'easeInOutQuad',
                   'delay':2000
@@ -691,7 +691,7 @@ svg {
           </em>
   </div><!-- end gallert-title agian -->
       <div  id="thanks">
-        <div class="layer1" id="pad1" style="height:24%;min-height:180px;width:13%;min-width:180px">
+        <div class="layer1" id="pad1" style="height:20%;min-height:140px;width:10%;min-width:140px">
         </div>
 
         <div class="layer1" id="pad2" style="height:31%;min-height:210px;width:23%;min-width:250px">
@@ -734,7 +734,7 @@ svg {
     }
 
         layer2[0].style.left=layer1[0].style.left
-    layer2[0].style.top=layer1[0].offsetHeight+ layer1[0].offsetTop+0.08477* $(window).height()+"px";
+    layer2[0].style.top=layer1[1].offsetHeight+ layer1[1].offsetTop+0.08477* $(window).height()+"px";
 
     layer2[1].style.left=layer1[2].style.left
     layer2[1].style.top=layer1[2].offsetHeight+ layer1[2].offsetTop+0.08477* $(window).height()+"px";
@@ -1097,9 +1097,9 @@ $(window).load(function() {
       $("#git").css("opacity", ($(window).scrollTop()-1.343*height)/700-0.1);
     $("#overlay2").css("opacity", ($(window).scrollTop()-1.343*height)/400);
     $("[id=time-title]").css("opacity", ($(window).scrollTop()-1.630*height)/170);
-    $("#self").css("opacity", ($(window).scrollTop()-7.4029*height)/490);
-   $(".layer1").css("opacity", ($(window).scrollTop()-7.4129*height)/490);
-    $("#pad3").css("opacity", ($(window).scrollTop()-7.4129*height)/490);
+    $("#self").css("opacity", ($(window).scrollTop()-6.2029*height)/290);
+   $(".layer1").css("opacity", ($(window).scrollTop()-6.2129*height)/290);
+    $("#pad3").css("opacity", ($(window).scrollTop()-6.2129*height)/290);
     
   });
 </script>

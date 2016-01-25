@@ -216,14 +216,10 @@ svg {
 
         <script type="text/javascript">
 
-      (function( $ ){
+      /*(function( $ ){
 
         $(document).ready(function(){
 
-          /**
-           * Setup your Lazy Line element.
-           * see README file for more settings
-           */
 
                $("#bottom1, #bottom2").lazylinepainter({
                     'svgData': svgData,
@@ -285,8 +281,8 @@ svg {
 
     </script>
 
-   <!-- <img src="flower/haitang.gif" id="flowerA" style="float:left; width:30%"></img>-->
-      <!-- <img src="flower/flower-tree.png" id="flowerB" style="right:0;bottom:0;width:16%"></img>-->
+    <img src="flower/haitang.gif" id="flowerA" style="float:left; width:30%"></img>
+      <img src="flower/flower-tree.png" id="flowerB" style="right:0;bottom:0;width:16%"></img>
     
   </div><!--end bg-->
 
@@ -972,7 +968,7 @@ $(window).load(function() {
     });
     $("#resume-pannel").hide();
     //$("[id=flower]").fadeTo(2000,1);
-    setTimeout(function(){$(" #wel-title").fadeTo(1500,1);}, 1100);
+    setTimeout(function(){$(" #wel-title, #flowerA, #flowerB").fadeTo(1500,1);}, 1100);
      
       //$("#flowerA").animate({width: "500px"});
    // $("#sfont").animate({fontSize: '30px'}, 900);
@@ -1074,7 +1070,7 @@ $(window).load(function() {
   // alert($(window).height());
 
          $("#edu-title, #edu-subtitle").css("opacity", 1-($(window).scrollTop()-0.388*height)/100);
-        $("#dragon, #catsleep").css("opacity", 1-($(window).scrollTop()-0.298*height)/100);
+        $("#dragon, #catsleep, #flowerB").css("opacity", 1-($(window).scrollTop()-0.298*height)/100);
 
         $("[id=nc]").css("opacity", ($(window).scrollTop()-0.52*height)/100);
     

@@ -27,8 +27,8 @@ var svgData = {
             "duration":5000
         }],
         "dimensions": {
-            "width": 30,
-            "height": 270
+            "width": 310,
+            "height": 262
         }
     },
                 "sleep": {

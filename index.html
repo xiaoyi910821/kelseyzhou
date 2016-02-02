@@ -193,7 +193,22 @@ svg {
              
               <img id="catsleep"style="width:35%;bottom:0;left:0" ></img>
              <script>
+            function freeze()
+             {
+              var $catsleep=document.getElementById("catsleep");
+              var $freeze=document.getElementById("freeze");
+              if($freeze.innerHTML=="Take a Rest"){
+                $catsleep.src="flower/freeze.gif";
+                $freeze.innerHTML="Move";
+                
+              } 
+              else{
+                $freeze.innerHTML="Take a Rest";
+                $catsleep.src="flower/sleep.gif";
+                //alert(freeze.innerHTML);
+              }   //alert($freeze.innerHTML);
            //  document.getElementById("resume-pannel").style.display="none";
+         }
 
              </script>
         </div>
@@ -288,27 +303,12 @@ svg {
                 });
                  $("#top1, #top2,#top3").lazylinepainter('paint');
         })
+             
              setTimeout(function(){
               document.getElementById("catsleep").src="flower/sleep.gif";
-              document.getElementById("sleep").style.display="none";}, 4800);
-
-             function freeze()
-             {
-              var $catsleep=document.getElementById("catsleep");
-              var $freeze=document.getElementById("freeze");
-              if($freeze.innerHTML=="Take a Rest"){
-                $catsleep.src="flower/freeze.gif";
-                $freeze.innerHTML="Move";
-                
-              } 
-              else{
-                $freeze.innerHTML="Take a Rest";
-                $catsleep.src="flower/sleep.gif";
-                //alert(freeze.innerHTML);
-              }   //alert($freeze.innerHTML);
-
+              document.getElementById("sleep").style.display="none";}, 4600);
               
-             }
+             
      var baloon = $('#welcome, #resume, #learn-more, #wel-title');
 
    function runIt() {

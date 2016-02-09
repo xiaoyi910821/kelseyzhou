@@ -193,6 +193,9 @@ svg {
              
               <img id="catsleep"style="width:35%;bottom:0;left:0" ></img>
              <script>
+              setTimeout(function(){
+              document.getElementById("catsleep").src="flower/sleep.gif";
+              document.getElementById("sleep").style.display="none";}, 4600);
             function freeze()
              {
               var $catsleep=document.getElementById("catsleep");
@@ -304,9 +307,7 @@ svg {
                  $("#top1, #top2,#top3").lazylinepainter('paint');
         })
              
-             setTimeout(function(){
-              document.getElementById("catsleep").src="flower/sleep.gif";
-              document.getElementById("sleep").style.display="none";}, 4600);
+
               
              
      var baloon = $('#welcome, #resume, #learn-more, #wel-title');

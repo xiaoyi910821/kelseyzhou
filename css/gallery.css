@@ -2,8 +2,7 @@
 	width: 100%;
 	height: auto;
 	background-color: #282828 ;	
-	background-image: url(../images/blackboard.jpg);
-  background-size: cover;
+	background: url(../paper2.png) repeat;
 	text-align: center;
 	font-family: 'Architects Daughter', cursive;
 	font-size: 15px;

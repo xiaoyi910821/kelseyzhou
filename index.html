@@ -190,7 +190,9 @@ svg {
              <div id='sleep'></div>
              
               <img id="catsleep"style="width:35%;bottom:0;left:0" ></img>
-             <script>
+        </div>
+    </div>
+                 <script>
               setTimeout(function(){
                  document.getElementById("catsleep").src="flower/sleep.gif";
                  document.getElementById("sleep").style.display="none";
@@ -207,16 +209,13 @@ svg {
               else{
                 $freeze.innerHTML="Take a Rest";
                 $catsleep.src="flower/sleep.gif";
-                //alert(freeze.innerHTML);
               }   //alert($freeze.innerHTML);
-           //  document.getElementById("resume-pannel").style.display="none";
+
          }
 
              </script>
-        </div>
-    </div>
 
-        <script type="text/javascript">
+    <script type="text/javascript">
 
       (function( $ ){
 
@@ -824,50 +823,6 @@ svg {
    
 
 </body>
-     <script src="jquery.collagePlus.min.js"></script>
-    <script src="jquery.removeWhitespace.min.js"></script>
-    <script src="jquery.collageCaption.min.js"></script>
-
-    <script type="text/javascript">
-
-
-    // All images need to be loaded for this plugin to work so
-    // we end up waiting for the whole window to load in this example
-    $(window).load(function () {
-
-
-
-
-        $("#loadmore").click(function(){
-          $('.effect-parent').show();
-            collage();
-            $('.Collage').collageCaption();
-            
-        });
-    });
-
-
-    // Here we apply the actual CollagePlus plugin
-    function collage() {
-        $('.Collage').removeWhitespace().collagePlus(
-            {
-                'fadeSpeed'     : 1800,
-                'targetHeight'  : 200
-            }
-        );
-    };
-
-    // This is just for the case that the browser window is resized
-    var resizeTimer = null;
-    $(window).bind('resize', function() {
-        // hide all the images until we resize them
-        $('.Collage .Image_Wrapper').css("opacity", 0);
-        // set a timer to re-apply the plugin
-        if (resizeTimer) clearTimeout(resizeTimer);
-        resizeTimer = setTimeout(collage, 200);
-    });
-
-    </script>
     <script type="text/javascript" src="PFold/js/jquery.pfold.js"></script>
     <script type="text/javascript">
       $(function() {
@@ -917,20 +872,6 @@ $(window).load(function() {
         scrollTop: $("#bg").offset().top
     });
     $("#resume-pannel").hide();
-    //$("[id=flower]").fadeTo(2000,1);
-    
-     
-      //$("#flowerA").animate({width: "500px"});
-   // $("#sfont").animate({fontSize: '30px'}, 900);
-
-
-
-    //$("#welcome").fadeTo(1500,1);
-
-
-    //$("#resume").animate({fontSize: '30px'}, 900);
-
-
 
     $("#resume").click(function(){
 
@@ -964,32 +905,6 @@ $(window).load(function() {
 
     });
 
-
-
-        /*function changeText(cont1, cont2, speed) {
-        var Otext = cont1.text();
-        var Ocontent = Otext.split("");
-        var i = 0;
-
-
-        function show() {
-            if (i < Ocontent.length) {
-                cont2.append(Ocontent[i]);
-                i = i + 1;
-            } else {
-                clearInterval(Otimer)
-            }
-        };
-        var Otimer = setInterval(show, speed);
-    };*/
-
-              // show indicators (requires debug extension)
-             // scene.addIndicators();
-           });
-</script>
-<script>
- //var x = $("#self").offset().top;
-//alert(x);
   var height=$(window).height();
   $(window).scroll(function(){
     //alert($(window).scrollTop();

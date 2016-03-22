@@ -29,6 +29,8 @@
   <script type="text/javascript" src="js/jquery.scrollmagic.js"></script>
   <script type="text/javascript" src="js/jquery.scrollmagic.debug.js"></script>
   <script type="text/javascript" src="PFold/js/modernizr.custom.79639.js"></script> 
+    <script src="fold/oridomi.min.js"></script>
+  <script src="fold/demo/demo.js"></script>
  
   <script src="draw/vendor/jquery-2.1.1.min.js"></script>
     <script src="draw/jquery.lazylinepainter-1.7.0.min.js"></script>
@@ -190,7 +192,14 @@ svg {
              <div id='sleep'></div>
              
               <img id="catsleep"style="width:35%;bottom:0;left:0" ></img>
-             <script>
+        </div>
+    </div>
+
+        <script type="text/javascript">
+
+      (function( $ ){
+
+        $(document).ready(function(){
               setTimeout(function(){
                  document.getElementById("catsleep").src="flower/sleep.gif";
                  document.getElementById("sleep").style.display="none";
@@ -207,20 +216,9 @@ svg {
               else{
                 $freeze.innerHTML="Take a Rest";
                 $catsleep.src="flower/sleep.gif";
-                //alert(freeze.innerHTML);
               }   //alert($freeze.innerHTML);
-           //  document.getElementById("resume-pannel").style.display="none";
+
          }
-
-             </script>
-        </div>
-    </div>
-
-        <script type="text/javascript">
-
-      (function( $ ){
-
-        $(document).ready(function(){
           $("#wel-title").fadeTo(1000,1);
         
            $("#resume").animate({
@@ -241,13 +239,6 @@ svg {
     },2700);
 
     setTimeout(function(){$("#flowerA, #flowerB").fadeTo(1500,0.9);}, 500);
-    
-
-          /**
-           * Setup your Lazy Line element.
-           * see README file for more settings
-           */
-
                $("#bottom1, #bottom2, #rose1").lazylinepainter({
                     'svgData': svgData,
                     'strokeWidth': 7,
@@ -421,9 +412,6 @@ svg {
               var scene = new ScrollScene({triggerElement: "#trigger1", duration: 250, tweenChanges: true})
                       .setTween(tween)
                       .addTo(controller);
-
-              // show indicators (requires debug extension)
-              //scene.addIndicators();
             });
           </script>
         </section>
@@ -824,50 +812,6 @@ svg {
    
 
 </body>
-     <script src="jquery.collagePlus.min.js"></script>
-    <script src="jquery.removeWhitespace.min.js"></script>
-    <script src="jquery.collageCaption.min.js"></script>
-
-    <script type="text/javascript">
-
-
-    // All images need to be loaded for this plugin to work so
-    // we end up waiting for the whole window to load in this example
-    $(window).load(function () {
-
-
-
-
-        $("#loadmore").click(function(){
-          $('.effect-parent').show();
-            collage();
-            $('.Collage').collageCaption();
-            
-        });
-    });
-
-
-    // Here we apply the actual CollagePlus plugin
-    function collage() {
-        $('.Collage').removeWhitespace().collagePlus(
-            {
-                'fadeSpeed'     : 1800,
-                'targetHeight'  : 200
-            }
-        );
-    };
-
-    // This is just for the case that the browser window is resized
-    var resizeTimer = null;
-    $(window).bind('resize', function() {
-        // hide all the images until we resize them
-        $('.Collage .Image_Wrapper').css("opacity", 0);
-        // set a timer to re-apply the plugin
-        if (resizeTimer) clearTimeout(resizeTimer);
-        resizeTimer = setTimeout(collage, 200);
-    });
-
-    </script>
     <script type="text/javascript" src="PFold/js/jquery.pfold.js"></script>
     <script type="text/javascript">
       $(function() {
@@ -911,27 +855,11 @@ svg {
       });
     </script>
 <script>
-$(window).load(function() {
   
     $('html, body').animate({
         scrollTop: $("#bg").offset().top
     });
     $("#resume-pannel").hide();
-    //$("[id=flower]").fadeTo(2000,1);
-    
-     
-      //$("#flowerA").animate({width: "500px"});
-   // $("#sfont").animate({fontSize: '30px'}, 900);
-
-
-
-    //$("#welcome").fadeTo(1500,1);
-
-
-    //$("#resume").animate({fontSize: '30px'}, 900);
-
-
-
     $("#resume").click(function(){
 
       $("body.mainpage").css('overflowY', 'hidden');
@@ -949,11 +877,6 @@ $(window).load(function() {
     $('html, body').animate({
         scrollTop: $("#edu-title").offset().top - $(window).height()+ $("#book").height()
     }, 1000);
-   // alert($(window).scrollTop()-$(window).height());
-    //$("#resume-pannel").hide();
-
-    //$("body.mainpage").css('overflowY', 'scroll');
-    //if(document.getElementById("welcome").innerHTML !="welcome to my home page")setTimeout(function(){changeText($("#TypeEffect p"), $("#welcome"), 150)},800);
   });
 
     $("#go-top").click(function()
@@ -964,37 +887,9 @@ $(window).load(function() {
 
     });
 
-
-
-        /*function changeText(cont1, cont2, speed) {
-        var Otext = cont1.text();
-        var Ocontent = Otext.split("");
-        var i = 0;
-
-
-        function show() {
-            if (i < Ocontent.length) {
-                cont2.append(Ocontent[i]);
-                i = i + 1;
-            } else {
-                clearInterval(Otimer)
-            }
-        };
-        var Otimer = setInterval(show, speed);
-    };*/
-
-              // show indicators (requires debug extension)
-             // scene.addIndicators();
-           });
-</script>
-<script>
- //var x = $("#self").offset().top;
-//alert(x);
   var height=$(window).height();
   $(window).scroll(function(){
-    //alert($(window).scrollTop();
-   // alert($(window).scrollTop());
-  // alert($(window).height());
+
 
          $("#edu-title, #edu-subtitle").css("opacity", 1-($(window).scrollTop()-0.388*height)/100);
         $("#dragon, #catsleep, #flowerB").css("opacity", 1-($(window).scrollTop()-0.298*height)/100);
@@ -1022,11 +917,6 @@ $(window).load(function() {
     //$("#pad3").css("opacity", ($(window).scrollTop()-6.2129*height)/290);
     
   });
-</script>
-
-  <script src="fold/oridomi.min.js"></script>
-  <script src="fold/demo/demo.js"></script>
-  <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)

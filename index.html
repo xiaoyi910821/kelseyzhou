@@ -824,7 +824,6 @@ svg {
 
 </body>
 
-   
     <script type="text/javascript" src="PFold/js/jquery.pfold.js"></script>
     <script type="text/javascript">
       $(function() {
@@ -874,19 +873,6 @@ $(window).load(function() {
         scrollTop: $("#bg").offset().top
     });
     $("#resume-pannel").hide();
-    //$("[id=flower]").fadeTo(2000,1);
-    
-     
-      //$("#flowerA").animate({width: "500px"});
-   // $("#sfont").animate({fontSize: '30px'}, 900);
-
-
-
-    //$("#welcome").fadeTo(1500,1);
-
-
-    //$("#resume").animate({fontSize: '30px'}, 900);
-
 
 
     $("#resume").click(function(){
@@ -906,11 +892,7 @@ $(window).load(function() {
     $('html, body').animate({
         scrollTop: $("#edu-title").offset().top - $(window).height()+ $("#book").height()
     }, 1000);
-   // alert($(window).scrollTop()-$(window).height());
-    //$("#resume-pannel").hide();
 
-    //$("body.mainpage").css('overflowY', 'scroll');
-    //if(document.getElementById("welcome").innerHTML !="welcome to my home page")setTimeout(function(){changeText($("#TypeEffect p"), $("#welcome"), 150)},800);
   });
 
     $("#go-top").click(function()
@@ -922,36 +904,9 @@ $(window).load(function() {
     });
 
 
-
-        /*function changeText(cont1, cont2, speed) {
-        var Otext = cont1.text();
-        var Ocontent = Otext.split("");
-        var i = 0;
-
-
-        function show() {
-            if (i < Ocontent.length) {
-                cont2.append(Ocontent[i]);
-                i = i + 1;
-            } else {
-                clearInterval(Otimer)
-            }
-        };
-        var Otimer = setInterval(show, speed);
-    };*/
-
-              // show indicators (requires debug extension)
-             // scene.addIndicators();
            });
-</script>
-<script>
- //var x = $("#self").offset().top;
-//alert(x);
   var height=$(window).height();
   $(window).scroll(function(){
-    //alert($(window).scrollTop();
-   // alert($(window).scrollTop());
-  // alert($(window).height());
 
          $("#edu-title, #edu-subtitle").css("opacity", 1-($(window).scrollTop()-0.388*height)/100);
         $("#dragon, #catsleep, #flowerB").css("opacity", 1-($(window).scrollTop()-0.298*height)/100);
@@ -974,9 +929,7 @@ $(window).load(function() {
       $("#git").css("opacity", ($(window).scrollTop()-1.343*height)/700-0.1);
     $("#overlay2").css("opacity", ($(window).scrollTop()-1.343*height)/400);
     $("[id=time-title]").css("opacity", ($(window).scrollTop()-1.630*height)/170);
-   // $("#self").css("opacity", ($(window).scrollTop()-6.8029*height)/290);
-  // $(".layer1").css("opacity", ($(window).scrollTop()-6.2129*height)/290);
-    //$("#pad3").css("opacity", ($(window).scrollTop()-6.2129*height)/290);
+
     
   });
 </script>

@@ -823,6 +823,8 @@ svg {
    
 
 </body>
+
+   
     <script type="text/javascript" src="PFold/js/jquery.pfold.js"></script>
     <script type="text/javascript">
       $(function() {
@@ -872,6 +874,20 @@ $(window).load(function() {
         scrollTop: $("#bg").offset().top
     });
     $("#resume-pannel").hide();
+    //$("[id=flower]").fadeTo(2000,1);
+    
+     
+      //$("#flowerA").animate({width: "500px"});
+   // $("#sfont").animate({fontSize: '30px'}, 900);
+
+
+
+    //$("#welcome").fadeTo(1500,1);
+
+
+    //$("#resume").animate({fontSize: '30px'}, 900);
+
+
 
     $("#resume").click(function(){
 
@@ -905,6 +921,32 @@ $(window).load(function() {
 
     });
 
+
+
+        /*function changeText(cont1, cont2, speed) {
+        var Otext = cont1.text();
+        var Ocontent = Otext.split("");
+        var i = 0;
+
+
+        function show() {
+            if (i < Ocontent.length) {
+                cont2.append(Ocontent[i]);
+                i = i + 1;
+            } else {
+                clearInterval(Otimer)
+            }
+        };
+        var Otimer = setInterval(show, speed);
+    };*/
+
+              // show indicators (requires debug extension)
+             // scene.addIndicators();
+           });
+</script>
+<script>
+ //var x = $("#self").offset().top;
+//alert(x);
   var height=$(window).height();
   $(window).scroll(function(){
     //alert($(window).scrollTop();

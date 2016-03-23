@@ -196,7 +196,7 @@ svg {
               setTimeout(function(){
                  document.getElementById("catsleep").src="flower/sleep.gif";
                  document.getElementById("sleep").style.display="none";
-             }, 6500);
+             }, 7200);
             function freeze()
              {
               var $catsleep=document.getElementById("catsleep");
@@ -420,9 +420,6 @@ svg {
               var scene = new ScrollScene({triggerElement: "#trigger1", duration: 250, tweenChanges: true})
                       .setTween(tween)
                       .addTo(controller);
-
-              // show indicators (requires debug extension)
-              //scene.addIndicators();
             });
           </script>
         </section>
